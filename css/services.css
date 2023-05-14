@@ -1,0 +1,78 @@
+/* Navbar */
+.top-menu{
+    background-color: #010101;
+    padding: 20px;
+}
+/* End Navbar */
+
+/* Services */
+#all-services{
+    padding: 3rem;
+}
+.services-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.serv-top{
+    text-align: center;
+    margin: 0 0 4rem 0;
+}
+.serv-top h1{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+.serv-top p{
+    letter-spacing: 0.1rem;
+}
+.serv-bottom{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "serv-1 serv-2 serv-3"
+                        "serv-4 serv-5 serv-5";
+}
+.serv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+.serv h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.serv h3 i{
+    margin-right: 2rem;
+    color: #00d679;
+}
+/* End Services */
+
+/* Portfolio */
+.port-items{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "item-1 item-2 item-3"
+                            "item-4 item-5 item-6";
+}
+.port-item{
+    padding: 1rem;
+}
+/* End Portfolio */
+
+/* Responsive */
+
+@media only screen and (max-width: 768px){
+    .serv-bottom{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "serv-1 serv-2"
+                            "serv-3 serv-4" 
+                            "serv-5 serv-5";
+    }
+    .port-items{
+        grid-template-areas: "item-1 item-2"
+                                 "item-3 item-4" 
+                                 "item-5 item-6";
+    }
+}
